@@ -13,6 +13,9 @@ const (
 func ExpressionsTest() {
 	expr := mathExpression(Multiply)
 	fmt.Println(expr(9, 7))
+
+	doubleResult := double(5, 6, expr)
+	fmt.Println(doubleResult)
 }
 
 func mathExpression(expr MathExpr) func(float64, float64) float64 {
@@ -40,4 +43,8 @@ func subtract(a float64, b float64) float64 {
 
 func multiply( a float64, b float64) float64 {
 	return a * b
+}
+
+func double(a float64, b float64, expr func(float64, float64) float64) float64 {
+	return 2 * expr(a, b)
 }
