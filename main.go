@@ -2,6 +2,8 @@ package main
 
 func main() {
 	//DuplicatesTest()
-	NodesTest()
+	//NodesTest()
+	//CollectionsTest()
+	ExpressionsTest()
 }
 
