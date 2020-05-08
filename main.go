@@ -4,6 +4,7 @@ func main() {
 	//DuplicatesTest()
 	//NodesTest()
 	//CollectionsTest()
-	ExpressionsTest()
+	//ExpressionsTest()
+	MatricesTest()
 }
 
